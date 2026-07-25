@@ -915,6 +915,10 @@ def get_analytics():
         ]
     })
 
+@app.route('/')
+def home():
+    return "LabourSync Backend is running live!"
+
 if __name__ == '__main__':
     print("LaborSync Python Flask Backend running on http://127.0.0.1:5000")
     app.run(host='0.0.0.0', port=5000, debug=True)
